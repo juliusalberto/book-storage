@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Library</h1>
+    </div>
+    <div class="content">
+        <button type="button" class="dark-button">+ Add Book</button>
+        <div class="book-list" id="book-list">
+        </div>
+    </div>
+
+    <div class="modal" id="addBookModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            <h1 class="bold big-word">Add new book</h1>
+            <form id="bookForm">
+                    <input type="text" id="title" name="title" placeholder="Title">
+                    <input type="text" id="author" name="author" placeholder="Author">
+                    <input type="number" id="pages" name="pages" placeholder="Pages">
+                <div>
+                    <label for="read" class="bold">Have you read it?</label>
+                    <input type="checkbox" name="read" id="read">
+                </div>
+
+                <button type="submit" class="btn green-btn">Add Book</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
